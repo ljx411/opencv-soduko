@@ -26,9 +26,9 @@ for path in img_path:
         #if cv2.contourArea(cnt)>100:
         [x,y,w,h] = cv2.boundingRect(cnt)
       
-        if w>30 and h > (height/4):  
+        if w>30 and h > (height/6):  
             ## 按y坐标分行
-            if y < (height/2):
+            if y < (height/4):
                 list1.append([x,y,w,h]) ## 第一行
             else:
                 list2.append([x,y,w,h]) ## 第二行
